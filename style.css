@@ -27,7 +27,7 @@ body {
     gap: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #ff4dff;
+    color: white; 
 }
 
 /* RIGHT SECTION */
@@ -734,4 +734,5 @@ iframe {
     opacity: 1;
     pointer-events: auto;
 }
+
 
