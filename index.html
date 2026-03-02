@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PixelPlay</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (VERY IMPORTANT) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <script src="script.js"></script>
+
+
+    <!-- TOP BAR -->
+    <nav class="top-bar">
+
+        <div class="logo">
+            <img style="width: 50px; height: 50px;" src="logo.png" alt="">
+            PixelPlay
+        </div>
+
+        <div class="right-section">
+
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search games...">
+            </div>
+
+            <i class="fa fa-heart icon"></i>
+            <i class="fa fa-user icon"></i>
+
+        </div>
+
+    </nav>
+
+
+<section class="main-navigation">
+
+    <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">New Releases</a></li>
+        <li><a href="#">Filter</a></li>
+    </ul>
+
+</section>
+
+    <h1 class="title">Welcome, Gamer!</h1>
+    <h2 class="subtitle">Enter a world where skills matter, reflexes rule, and every match is legendary.</h2>
+
+
+<section class="banner">
+
+    <img src="poster1.png" class="banner-img">
+
+    <div class="banner-content">
+        <h2>Alien Invasion</h2>
+        <p>Enter the battle zone. No mercy. Only skill.</p>
+
+        <button onclick="openGame('https://example.com')">
+            Play Now
+        </button>
+    </div>
+
+</section>
+
+<h2 class="trending-scroll-title">Trending Now</h2>
+
+<div class="trending-scroll-wrapper">
+    <div class="trending-scroll-track">
+
+        <div class="trending-scroll-card">
+            <h3>Obsidian Wrath</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Neon Rift</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Ironfang Rebellion</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Eclipse of Titans</h3>
+            <button>Play</button>
+        </div>
+
+        <!-- duplicates for loop -->
+        <div class="trending-scroll-card">
+            <h3>Obsidian Wrath</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Neon Rift</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Ironfang Rebellion</h3>
+            <button>Play</button>
+        </div>
+
+        <div class="trending-scroll-card">
+            <h3>Eclipse of Titans</h3>
+            <button>Play</button>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Game Grid -->
+
+    <h1 class="title2">TOP GAMES</h1>
+
+    <div class="games">
+
+        <div class="game-card">
+            <img class="game-image" src="ancientbeast.png" alt="ancientbeast">
+            <h3>Ancient Beast</h3>
+            <button onclick="openGame('https://freezingmoon.github.io/AncientBeast/')">
+                Play
+            </button>
+        </div>
+
+        <div class="game-card">
+            <img src="adventneon.png" alt="adventneon" class="game-image">
+            <h3>Advent Neon</h3>
+            <button onclick="openGame('https://playsnake.org/')">
+                Play
+            </button>
+        </div>
+
+        <div class="game-card">
+            <img src="shadowlegacy.png" alt="shadowlegacy" class="game-image">
+            <h3>Shadow Legacy</h3>
+            <button onclick="openGame('https://playsnake.org/')">
+                Play
+            </button>
+        </div>
+
+        <div class="game-card">
+            <img src="skyforgeodyssey.png" alt="skyforgeodyssey" class="game-image">
+            <h3>Sky Forge Odyssey</h3>
+            <button onclick="openGame('https://playsnake.org/')">
+                Play
+            </button>
+        </div>
+
+        <div class="game-card">
+            <img src="shadowlegends.png" alt="shadowlegends" class="game-image">
+            <h3>Shadow Legends</h3>
+            <button onclick="openGame('https://playsnake.org/')">
+                Play
+            </button>
+        </div>
+
+        <div class="game-card">
+            <img src="arcanerealms.png" alt="arcanerealms" class="game-image">
+            <h3>Arcane Realms</h3>
+            <button onclick="openGame('https://example.com')">
+                Play
+            </button>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Retro Classics</h2>
+
+<div class="popular-row">
+
+    <div class="game-card2">
+        <img src="Pacman.jpg" class="game-img">
+        <h3>Pac-Man</h3>
+        <button class="b2" onclick="openGame('https://www.pacmangame.com/')">Play</button>
+    </div>
+
+    <div class="game-card2">
+        <img src="Sonic.jpg" class="game-img">
+        <h3>Sonic</h3>
+        <button class="b2" onclick="openGame('https://www.sonic-game.com/')">Play</button>
+    </div>
+
+    <div class="game-card2">
+        <img src="Contra.jpg" class="game-img">
+        <h3>Contra</h3>
+        <button class="b2" onclick="openGame('https://www.contra-game.com/')">Play</button>
+    </div>
+
+    <div class="game-card2">
+        <img src="Mario.jpg" class="game-img">
+        <h3>Mario</h3>
+        <button class="b2" onclick="openGame('https://www.mario-game.com/')">Play</button>
+    </div>
+</div>
+
+
+<section class="banner2">
+
+    <img src="Poster.jpg" class="banner-img3">
+
+    <div class="banner-content2">
+    
+        <button class="b3" onclick="openGame('https://example.com')">
+            PLAY NOW
+        </button>
+    </div>
+
+</section>
+
+
+
+<!-- Srcool section with -->
+
+<h2 class="section-title">Featured Games</h2>
+
+<div class="scroll-container">
+
+    <button class="scroll-btn left" onclick="moveShelfLeft()">
+    ◀
+</button>
+
+
+    <div class="scroll-row" id="featuredRow">
+
+        <div class="game-card">
+            <img src="CyberClash.png" class="game-img">
+            <h3>Cyber Clash</h3>
+            <button onclick="openGame('https://example.com')">Play</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Pixel Racer.png" class="game-img">
+            <h3>Pixel Racer</h3>
+            <button onclick="openGame('https://example.com')">Play</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Alien Storm.png" class="game-img">
+            <h3>Alien Storm</h3>
+            <button onclick="openGame('https://example.com')">Play</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Neon Runner.png" class="game-img">
+            <h3>Neon Runner</h3>
+            <button onclick="openGame('https://example.com')">Play</button>
+        </div>
+
+        
+        <div class="game-card">
+            <img src="Shadow Arena.png" class="game-img">
+            <h3>Shadow Arena</h3>
+            <button onclick="openGame('https://example.com')">Play</button>
+        </div>
+    </div>
+
+    <button class="scroll-btn right" onclick="moveShelfRight()">
+    ▶
+</button>
+
+</div>
+
+
+
+
+
+<h2 class="section-title">UPCOMING GAMES</h2>
+
+<div class="top-picks-wrapper">
+
+    <button class="tp-scroll-btn left" onclick="scrollTopPicks(-400)">◀</button>
+
+    <div class="top-picks-row" id="topPicksRow">
+
+        <div class="big-card">
+            <img src="fireground.png" alt="Fireground">
+        </div>
+
+        <div class="middle-grid">
+            <img src="car.png" alt="Car">
+            <img src="heist.png" alt="">
+            <img src="assisian.png" alt="">
+            <img src="warrior.png" alt="">
+        </div>
+
+        <div class="big-card">
+            <img src="unchart.png" alt="Night">
+        </div>
+
+    </div>
+
+    <button class="tp-scroll-btn right" onclick="scrollTopPicks(400)">▶</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="gaming-footer">
+
+    <div class="gaming-footer-container">
+
+        <div class="gaming-footer-brand">
+            <img style="width: 150px; height: 150px;" src="logo.png" alt="">
+            <h2>PixelPlay</h2>
+            <p>Your portal to endless gaming adventures.</p>
+        </div>
+
+        <div class="gaming-footer-links">
+            <h4>Explore</h4>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Trending</a>
+            <a href="#">New Releases</a>
+        </div>
+
+        <div class="gaming-footer-links">
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+        </div>
+
+        <div class="gaming-footer-social">
+            <h4>Follow Us</h4>
+            <div class="gaming-social-icons">
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gaming-footer-bottom">
+        <p>© 2026 PixelPlay. All rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="closeGame()">✖</button>
+
+            <iframe id="gameFrame" src=""></iframe>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
